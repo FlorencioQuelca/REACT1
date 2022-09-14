@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/app.css'
 const Card = () => {
-    const persona ={name:"florencio2",edad:30, pelicula:"sart war", musica:"Hola Beats" }
+    const persona ={name:"florencio",edad:30, pelicula:"star war", musica:"Hola Beats" }
   return (
     <ul className='card'>
         <li> <span className='negrita'> 😀Nombre:</span> {persona.name}</li>

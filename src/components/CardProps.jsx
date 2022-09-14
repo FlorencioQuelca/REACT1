@@ -9,12 +9,12 @@ const objectColor={
   return (
     <div style={objectColor} >
     <h2 >{props.title}</h2>
-    <ol>
+    <ul >
         <li>{props.list[0]}</li>
         <li>{props.list[1]}</li>
         <li>{props.list[2]}</li>
         <li>{props.list[3]}</li>
-    </ol>
+    </ul>
     </div>
   )
 }

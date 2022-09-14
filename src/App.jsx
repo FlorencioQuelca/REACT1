@@ -25,7 +25,7 @@ function App() { //componentes empeizan en mayusculas
     }
   ]
   return ( //return jsx = 
-    <div className="App">
+    <div className="main">
       <Card />
       <CardProps props={array[0]} />
       <CardProps props={array[1]} />
