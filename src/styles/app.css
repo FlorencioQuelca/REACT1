@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+    min-height: 100vh;
+    width: 300px;
+}
+
+.card {
+    padding: 2em;
+    background-color: rgb(134, 119, 187);
+    text-align: left;
+    border-radius: 10px;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.negrita {
+    color: white;
+    font-weight: bold;
+}

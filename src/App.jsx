@@ -1,34 +1,37 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import Card from './components/Card'
+import CardProps from './components/CardProps'
+import './styles/app.css'
 
-function App() {
+
+function App() { //componentes empeizan en mayusculas
   const [count, setCount] = useState(0)
-
-  return (
+  const array = [
+    {
+      title: 'Hobiies',
+      list: ['Musica', 'programar', 'dormir', 'comer'],
+      color: 'red'
+    },
+    {
+      title: 'Mi Comida favorita',
+      list: ['Pique', 'Tomatada', 'Ensalada', 'Pizza'],
+      color: 'orange'
+    },
+    {
+      title: 'Mi Stack tech',
+      list: ['HTML', 'CSS', 'JavaScript', 'C++'],
+      color: 'green'
+    }
+  ]
+  return ( //return jsx = 
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Card />
+      <CardProps props={array[0]} />
+      <CardProps props={array[1]} />
+      <CardProps props={array[2]} />
     </div>
   )
 }
-
 export default App
+
